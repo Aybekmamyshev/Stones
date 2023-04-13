@@ -1,0 +1,118 @@
+@import "../../../Mixins/Mixins";
+.cart{
+  .container{
+     padding: 40px 0 125px 0;
+  }
+  &__wrapper{
+    display: flex;
+  }
+  &__catalog{
+    background:#FBFAFC;
+    padding: 15px 20px 21px 15px;
+  }
+  &__title{
+    @include cormorant;
+    @include text(500,48px,110%,#000000);
+    margin: 0 0 40px 0;
+  }
+  &__ul{
+    display: flex;
+    flex-direction: column;
+  }
+  &__list{
+    @include montserrat;
+    @include text(400,14px,120%,#000000);
+    padding: 15px 20px 21px 15px;
+
+    &:hover{
+      background:#B777BE;
+      color: #ffffff;
+    }
+  }
+  &__wrapp{
+    display: flex;
+    align-items: center;
+    margin: 0  0 56px 0;
+  }
+  &__txt{
+    @include montserrat;
+    @include text(400,14px,120%,#6A6A6A);
+    width: 270px;
+  }
+  &__box{
+    text-align: center;
+  }
+  &__subtitle{
+    @include montserrat;
+    @include text(400,20px,120%,#000000);
+    margin: 0 0 8px 0;
+  }
+  &__text{
+    @include montserrat;
+    @include text(400,14px,120%,#6A6A6A);
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+    border-top: 1px solid #C6C6C6;
+    padding: 24px 0;
+    margin: 0 0 40px 0 ;
+  }
+  &__btn{
+    @include montserrat;
+    @include text(700,13px,16px,#000000);
+    border: 2px solid  #B777BE;
+    padding: 13px 25px;
+    background: transparent;
+  }
+  &__line{
+    height: 80px;
+    width: 2px;
+    background: #000000;
+    margin: 0 19px 0 0 ;
+  }
+  &__web{
+    margin: 0 auto 0 0 ;
+  }
+  &__center{
+    width: 77px;
+    height: 1px;
+    background: #B777BE;
+    margin:0 auto 10px auto;
+  }
+ &__red{
+   @include montserrat;
+   @include text(400,16px,140%,#000000);
+   margin: 0 0 44px 0;
+ }
+  &__row{
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    width: 287px;
+    height: 320px;
+    text-align: center;
+
+  }
+  &__picture{
+    width: 156px;
+    height: 161px;
+    margin: 0 auto;
+  }
+  &__rub{
+    @include montserrat;
+    @include text(400,16px,140%,#B777BE);
+  }
+  &__col{
+    display: flex;
+    flex-wrap: wrap;
+    width: 870px;
+  }
+  &__btn-second{
+    @include montserrat;
+    @include text(700,9px,11px,#6A6A6A);
+    border: 1px solid rgba(183, 119, 190, 1);
+    padding: 10px 20px;
+    margin: 52px auto  0 auto;
+  }
+}

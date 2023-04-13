@@ -1,0 +1,84 @@
+@import "../../../Mixins/Mixins";
+.row{
+  .container{
+    padding: 0 0 150px 0;
+  }
+  &__wrapper{
+    display: flex;
+    column-gap: 2px;
+  }
+  &__box{
+    width: 293px;
+    height: 320px;
+    padding:30px 0 15px 0;
+    text-align: center;
+    border: 1px solid #F4F4F4;
+    &:hover{
+      box-shadow: 2px 2px 25px -15px  #000000;
+    }
+  }
+  &__block{
+    width: 156px;
+    height: 161px;
+    margin: 0 auto;
+  }
+  &__line{
+    width: 71px;
+    height: 1px;
+    background:#B777BE;
+    margin: 20px auto 10px auto ;
+    display: flex;
+
+  }
+  &__title{
+    @include montserrat;
+    @include text(400,16px,100%,#000000);
+    width: 203px;
+    margin:0 auto 25px auto;
+  }
+  &__price{
+    @include montserrat;
+    @include text(400,12px,15px,#C6C6C6);
+    text-decoration:line-through;
+    margin:0 0 5px 0;
+  }
+  &__price-del{
+     color: transparent;
+  }
+  &__heft{
+    @include montserrat;
+    @include text(400,16px,140%,#B777BE);
+  }
+  &__btn{
+    width: 287px;
+    height: 60px;
+    border: 2px solid #B777BE;
+    display: flex;
+    justify-content: center;
+    column-gap:15px;
+    align-items: center;
+    margin:80px auto 0 auto;
+    @include montserrat;
+    @include text(700,12px,16px,#000000)
+  }
+}
+
+@media (max-width:  560px){
+   .row{
+     .container{
+       padding: 0 0 137px 0;
+     }
+     &__wrapper{
+       display: flex;
+       flex-wrap: wrap;
+     }
+     &__box{
+       width: 175px;
+     }
+     &__btn{
+       width: 200px;
+       height: 50px;
+       background: transparent;
+     }
+   }
+}

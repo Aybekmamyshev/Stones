@@ -1,0 +1,107 @@
+@import "../../../Mixins/Mixins";
+.year{
+   padding: 0 48px 0;
+   margin: 0 0 0 0;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @include cormorant;
+    @include text(500,48px,110%,#000000);
+    margin: 0 0 25px 0;
+  }
+  &__txt{
+    @include montserrat;
+    @include text(400,20px,160%,#6A6A6A);
+    margin: 0 0 0 0;
+  }
+  &__border{
+    border: 5px solid #C6C6C6;
+    transform: rotate(4deg);
+    width: 171px;
+    height: 131px;
+    padding: 20px 40px;
+  }
+  &__wrapper{
+    display: flex;
+    column-gap: 84px;
+  }
+  &__third{
+    position:relative;
+    right: -110px;
+    bottom: 230px;
+  }
+  &__subtitle{
+    @include montserrat;
+    @include text(500,20px,180%,#000000);
+  }
+  &__text{
+    @include cormorant;
+    @include text(400,20px,160%,#000000);
+    width: 570px;
+  }
+  &__line{
+    width: 77px;
+    height: 1px;
+    background: #B777BE;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}
+@media (max-width: 570px) {
+   .year{
+     .container{
+       padding: 0 0 124px 0;
+     }
+     &__title{
+       @include text(500,36px,110%,#000000);
+       text-align: center;
+       width: 310px;
+       margin:0 0 20px auto;
+     }
+     &__txt{
+       @include text(400,18px,160%,#6A6A6A);
+       width: 320px;
+       margin: 0 0 40px auto;
+     }
+     &__row{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+     }
+     &__border{
+       display: none;
+     }
+     &__wrapper{
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+     }
+     &__inner{
+       width: 350px;
+     }
+     &__line{
+       width: 47px;
+       height: 1px;
+       margin:0 auto 10px auto;
+     }
+     &__text{
+       width: 350px;
+       text-align: center;
+     }
+     &__subtitle{
+       text-align: center;
+     }
+     &__box{
+       margin:30px 0 0 0 ;
+       width: 349px;
+       height: 302px;
+     }
+   }
+}

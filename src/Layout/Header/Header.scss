@@ -1,0 +1,99 @@
+@import "../../Mixins/Mixins";
+.header{
+  padding: 17px 0 13px 0;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__block{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+&__wrapp{
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+  &__socials{
+    display: flex;
+    column-gap: 13px;
+  }
+  &__title{
+    @include cormorant;
+    @include text(400,16px,20px,#000000);
+  }
+  &__subtitle{
+    @include cormorant;
+    @include text(400,12px,15px,rgba(106, 106, 106, 1));
+  }
+  &__subtitle-sec{
+    @include montserrat;
+    @include text(400,12px,15px,#B777BE);
+  }
+  &__link-num{
+    @include montserrat;
+    @include text(400,16px,20px,#000000);
+  }
+  &__link{
+    @include montserrat;
+    @include text(400,12px,15px,#B777BE);
+  }
+  &__row-2{
+    display: flex;
+     justify-content: center;
+    column-gap: 155px;
+    margin: 17px 0 0 0 ;
+  }
+  &__link-page{
+    @include montserrat;
+    @include text(400,13px,16px,#000000)
+  }
+}
+
+@media (max-width: 560px) {
+    .header{
+      .container{
+         padding: 11px 0 13px 0 ;
+      }
+      &__burger{
+        display:none;
+        flex-direction: column;
+        row-gap:9px;
+        margin: 0 0 0 auto;
+      }
+      &__row{
+        display: flex;
+        justify-content: space-between;
+      }
+      &__line{
+        width:38px;
+        height: 4px;
+        background: #B777BE;
+      }
+      &__title{
+        display: none;
+      }
+      &__burger{
+        display: flex;
+      }
+      &__row-2{
+         display: none;
+      }
+      &__block{
+        display: none;
+      }
+      &__number{
+        display: none;
+      }
+      &__socials{
+        display: none;
+      }
+    }
+}

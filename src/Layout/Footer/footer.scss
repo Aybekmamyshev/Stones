@@ -1,0 +1,55 @@
+@import "../../Mixins/Mixins";
+.footer{
+  background: #F5F5F5;
+  .container{
+    padding: 22px 0 20px 0;
+  }
+  &__logo{
+    margin: 0 0 60px 0;
+  }
+  &__content{
+    display: flex;
+    align-content: center;
+  }
+  &__txt{
+    @include text(400,9px,11px,#6A6A6A);
+    @include montserrat;
+    text-align: center;
+  }
+  &__text{
+    @include text(400,9px,11px,#6A6A6A);
+    @include montserrat;
+    text-align: center;
+    margin: 0 0 12px 0;
+  }
+  &__title{
+    @include montserrat;
+    @include text(400,9px,11px,#000000);
+    margin:0 0 16px 0;
+    text-align: center;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin: 0 0 62px 0;
+  }
+  &__icons{
+    display: flex;
+    column-gap:13px;
+  }
+  &__wrapp{
+    display: flex;
+    column-gap: 21px;
+  }
+  &__order{
+    @include montserrat;
+    @include text(400,12px,15px,#B777BE);
+    margin: 0 0 100px 0 ;
+  }
+  &__block{
+    &_right{
+      margin: 0 100px 0 0 ;
+    }
+  }
+}

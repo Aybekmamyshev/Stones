@@ -1,0 +1,86 @@
+@import "../../../Mixins/Mixins";
+.men{
+  .container{
+     padding: 121px 0 100px 0;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 87px;
+    align-items: center;
+  }
+  &__block{
+    position:relative;
+  }
+  &__title{
+    @include cormorant;
+    @include text(500,48px,110%,#000000);
+    margin: 0 0 20px 0;
+  }
+  &__manager{
+    position: absolute;
+    top:160px;
+    left:-120px;
+    @include montserrat;
+    @include text(700,16px,140%,rgba(106, 106, 106, 1))
+  }
+  &__about{
+    @include montserrat;
+    @include text(500,16px,140%,rgba(198, 198, 198, 1))
+  }
+  &__txt{
+    @include montserrat;
+    @include text(400,20px,160%,#6A6A6A);
+    margin:  0 0 40px 0;
+  }
+  //&__name{
+  //  display: flex;
+  //  align-items: center;
+  //  background: #F5F5F5;
+  //
+  //}
+  &__input{
+    width: 370px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin:0 0 5px 0 ;
+    @include montserrat;
+    @include text(400,16px,140%, #6A6A6A);
+  }
+  &__label{
+    display: flex;
+    background: #F5F5F5;
+    width: 370px;
+    padding:15px;
+    margin: 0 0 8px 0;
+  }
+  &__btn{
+    @include montserrat;
+    @include text(700,12px,16px,#000000);
+    padding: 15px 45px;
+    width: 370px;
+    border: 1px solid rgba(183, 119, 190, 1);
+    background: #ffffff;
+    letter-spacing: 0.2em;
+    transition:0.2s;
+    &:hover{
+      background: rgba(183, 119, 190, 1);
+      color: #FFFFFF;
+    }
+  }
+  &__agree{
+    display: flex;
+    column-gap: 8px;
+    margin: 30px 0 0 0 ;
+  }
+  &__opinion{
+    @include montserrat;
+    @include text(400,12px,100%,#C6C6C6);
+    width: 321px;
+  }
+  &__politic{
+    @include montserrat;
+    @include text(400,12px,100%,rgba(183, 119, 190, 1));
+  }
+}

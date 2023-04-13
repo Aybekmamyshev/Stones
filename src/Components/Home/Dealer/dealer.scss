@@ -1,0 +1,63 @@
+@import "../../../Mixins/Mixins";
+.dealer{
+  background:  #F3F3F6;
+  .container{
+    padding:93px 0 50px 0 ;
+  }
+  &__title{
+    text-align: center;
+    @include cormorant;
+    @include text(500,48px,110%,#000000);
+    margin: 0 0 20px 0;
+  }
+  &__txt{
+    @include montserrat;
+    @include text(400,20px,160%,#000000);
+    margin: 0 auto 30px auto ;
+    width: 580px;
+  }
+&__wrapper{
+  display: flex;
+  column-gap:50px;
+}
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap:56px;
+    border: 2px solid  #B777BE;
+    width: 700px;
+    height: 150px;
+  }
+  &__subtitle{
+    @include montserrat;
+    @include text(400,20px,160%,#000000);
+    width: 249px;
+  }
+}
+
+@media (max-width: 560px) {
+    .dealer{
+      .container{
+        display: flex;
+        flex-direction: column;
+        padding:60px 0 60px 0 ;
+      }
+      &__wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+      }
+      &__txt{
+        width: 350px;
+        text-align: center;
+        @include text(400,18px,140%,#000000);
+      }
+      &__box{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        padding: 0 0 0 20px;
+      }
+    }
+}

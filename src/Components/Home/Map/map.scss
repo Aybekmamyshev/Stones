@@ -1,0 +1,62 @@
+@import "../../../Mixins/Mixins";
+.map{
+ .container{
+   padding: 0 0 115px 0;
+ }
+  &__title{
+    @include cormorant;
+    @include text(500,32px,120%,#ffffff );
+    margin: 0 0 37px 0;
+  }
+  &__wrapper{
+    display: flex;
+  }
+  &__block{
+    background: #000000;
+   padding: 67px 40px 0;
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+  }
+  &__text{
+    @include montserrat;
+    @include text(400,13px,140%,#ffffffff);
+  }
+  &__call{
+    @include montserrat;
+    @include text(400,15px,140%,#ffffffff);
+  }
+  &__link{
+    @include montserrat;
+    @include text(400,16px,140%,rgba(183, 119, 190, 1));
+    text-decoration: underline;
+  }
+  &__stone{
+    width: 150px;
+    height: 150px;
+    margin: 40px auto 0 auto;
+  }
+  &__wrapp{
+    display: flex;
+    flex-direction: column;
+    row-gap:40px;
+  }
+}
+@media (max-width: 560px) {
+  .map{
+    .container{
+      padding:0 0 20px 0;
+    }
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+    &__iframe{
+      height: 400px;
+      width: 100%;
+
+    }
+  }
+}

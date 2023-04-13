@@ -1,0 +1,25 @@
+@import "../../../Mixins/Mixins";
+.text{
+  .container{
+     padding: 0 0 134px 0;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__title{
+    @include cormorant;
+    @include text(500,48px,110%,#000000);
+    margin: 0 0 40px 0 ;
+  }
+  &__txt{
+    @include montserrat;
+    @include text(400,16px,140%,#000000);
+    margin: 0 0 30px 0;
+    width: 760px;
+  }
+  &__picture{
+    width: 430px;
+  }
+}

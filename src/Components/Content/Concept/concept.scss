@@ -1,0 +1,12 @@
+@import "../../../Mixins/Mixins";
+.concept{
+  .container{
+    padding:0 0 121px 0;
+  }
+  &__title{
+    @include cormorant;
+    @include text(500,49px,110%,#000000);
+    margin: 0 0 0 0;
+    text-align: center;
+  }
+}
